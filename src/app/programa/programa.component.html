@@ -1,0 +1,32 @@
+<div ID="CONTENEDOR">
+  <div ID="ENCABEZADO"><A (click)="irLogin()"><IMG SRC='./assets/LOGOPOL.png' width="10%" class="centrado" ></A>  <div class="title"><strong>SUSTENTACIÓN Y PASANTIAS</strong></div></div>
+    <div ID="MITAD">
+        <button type="submit" class="btn btn-primary" style= " margin-top: 15px ;margin-left: 1110px ;background-color: #00a3c6; border-color: #00a3c6; font-family: 'Calibri' ;  border-radius: 90px; width: 150px; font-size: 14px; height: 40px;">+  Nuevo Registro</button>
+        <button type="submit" class="btn btn-primary" style= " background-color: #ebebeb; border-color: #ebebeb; font-family: 'Calibri' ; color: #293357; border-radius: 90px; width: 250px; font-size: 13px; height: 40px;">INFORMACIÓN GENERAL</button>
+        <button type="submit" class="btn btn-primary" style= " background-color: #f4f4f4; border-color: #f4f4f4; font-family: 'Calibri' ; color: #293357; border-radius: 90px; width: 250px; font-size: 13px; height: 40px;">PROGRAMAS</button>
+      
+        <DIV ID="INFOGENERAL">
+            <table class="table" style="background-color:#f4f4f4; margin-top: 2px ;">
+                <thead>
+                  <tr>
+                    <th scope="col" style= " font-family: 'Calibri' ; color: #293357;  font-size: 12px; text-align: center;  width: 20%;">N° PROGRAMA</th>
+                    <th scope="col" style= " font-family: 'Calibri' ; color: #293357;  font-size: 12px; text-align: center; width: 20%;">NOMBRE</th>
+                    <th scope="col" style= " font-family: 'Calibri' ; color: #293357;  font-size: 12px; text-align: center; width: 20%;">FACULTAD</th>
+                    <th scope="col" style= " font-family: 'Calibri' ; color: #293357;  font-size: 12px; text-align: center; width: 20%;">ESCUELA</th>
+                    <th scope="col" style= " font-family: 'Calibri' ; color: #293357;  font-size: 12px; text-align: center; width: 20%;">ACCIÓN</th>
+                  </tr>
+               </thead>  
+                <tbody>
+                  <tr *ngFor="let programa of programas">
+                    <td style="text-align: center; font-size: 12px">{{programa.num_programa}}</td>
+                    <td style="text-align: center; font-size: 12px">{{programa.escuela}}</td>
+                    <td style="text-align: center; font-size: 12px">{{programa.facultad}}</td>
+                    <td style="text-align: center; font-size: 12px">{{programa.nombre}}</td>
+                    <td style="text-align: center; font-size: 12px"><IMG SRC='./assets/EDITAR.png' style="width: 14%;" ></td>
+                  </tr>
+                </tbody>
+              </table>
+        </DIV>
+    </div>
+    <DIV ID="PIE"></DIV>
+</div>

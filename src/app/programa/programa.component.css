@@ -1,0 +1,59 @@
+#CONTENEDOR {MARGIN:AUTO;WIDTH:150vh;HEIGHT:80vh;BACKGROUND:WHITE;}
+#CONTENEDOR #ENCABEZADO {WIDTH:1300PX;HEIGHT:125PX;BACKGROUND-COLOR:#FFC61A; position: relative; }
+#CONTENEDOR #MITAD {WIDTH:1300PX;HEIGHT:400PX;BACKGROUND:#fffffa;}  
+#CONTENEDOR #PIE {WIDTH:1300PX;HEIGHT:125PX;BACKGROUND-COLOR:#FFC61A; position: relative; }
+
+   .centrado{
+		    margin:25px;
+    }
+
+    .title {
+font-family: "Calibri";
+font-size: 24px;
+color: #293357;
+
+      /* centrar vertical y horizontalmente */
+      position: absolute;
+      top: 60%;
+      left: 40%;
+      margin: -25px 0 0 -25px; /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+    }
+
+    .formlogin{
+       background-color :#cde1ff;
+            /* centrar vertical y horizontalmente */
+            position: absolute;
+
+            width: 370px;
+            height: 180px;
+            border-radius: 10%;
+
+          
+    }
+
+    .input {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      border: 1px solid #DADCE0;
+      border-radius: 7px;
+      font-size: 16px;
+      padding: 0 20px;
+      outline: none;
+      background: none;
+      z-index: 1;
+    }
+
+    input[type="user"]::placeholder {
+                 
+      text-align: center;
+      font-size: 12px;
+  }
+
+  input[type="password"]::placeholder {
+                 
+   text-align: center;
+   font-size: 12px;
+}

@@ -1,0 +1,29 @@
+<div ID="CONTENEDOR">
+  <div ID="ENCABEZADO">
+    <A (click)="irLogin()">
+      <IMG SRC='./assets/LOGOPOL.png' width="10%" class="centrado" >
+    </A>  
+    <div class="title">
+      <strong>SUSTENTACIÓN Y PASANTIAS</strong>
+    </div>
+</div>
+    <div ID="MITAD">
+      <div  style="margin-top: 6%; margin-left: 570px;font-family: 'Calibri'; font-size: 24px; color: #293357;"><strong>INICIAR SESION</strong></div>
+      <div class="formlogin"  style="margin-top: 25px; position: absolute; margin-left: 470px;">
+        <form class="form-group">
+          <div class="alert alert-warning" *ngIf='invalidLogin'>{{errorMessage}}</div>
+          <div class="alert alert-success" *ngIf='loginSuccess'>{{successMessage}}</div>
+          <div class="mb-3" style="margin-top: 25px; position: absolute; margin-left: 75px;">
+            <label class="label" for="user"></label>
+            <input type="user" class="form-control" id="username" [(ngModel)]="username" placeholder="Usuario" style="text-align: center ;" name="username">
+          </div>
+          <div class="mb-3"style="margin-top: 80px; position: absolute; margin-left: 75px;" >
+            <label for="pwd" class="label" style="height:10px ;"></label>
+            <input type="password" class="form-control" [(ngModel)]="password" id="password"  placeholder="Contraseña" style="text-align: center ;" name="password">
+          </div>
+          <button (click)=handleLogin() type="submit" style= "margin-top:57%; margin-left: 100px; background-color: #7cb58a; border-color: #7cb58a; font-family: 'Calibri' ; border-radius: 90px; width: 150px;" class="btn btn-primary">INGRESAR</button>
+        </form>
+      </div>      
+    </div>
+    <DIV ID="PIE"></DIV>
+</div>
